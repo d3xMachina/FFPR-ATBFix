@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 namespace FFPR_ATBFix
@@ -43,7 +39,7 @@ namespace FFPR_ATBFix
         {
             List<GameObject> children = new List<GameObject>();
 
-            if(obj != null)
+            if (obj != null)
             {
                 for (int i = 0; i < obj.transform.childCount; i++)
                 {
@@ -53,7 +49,7 @@ namespace FFPR_ATBFix
                         if (child.gameObject != null)
                         {
                             children.Add(child.gameObject);
-                            if(child.childCount != 0)
+                            if (child.childCount != 0)
                             {
                                 children.AddRange(GetAllChildren(child.gameObject));
                             }

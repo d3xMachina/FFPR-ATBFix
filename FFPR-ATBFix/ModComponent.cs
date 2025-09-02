@@ -1,10 +1,6 @@
 ﻿using BepInEx.Logging;
 using Last.Management;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using UnityEngine;
 
 namespace FFPR_ATBFix
@@ -69,14 +65,14 @@ namespace FFPR_ATBFix
                 {
                     return;
                 }
-                if(resourceManager == null)
+                if (resourceManager == null)
                 {
                     resourceManager = ResourceManager.Instance;
                     if (resourceManager == null) return;
                 }
                 if (!hasRun)
                 {
-                    if(resourceManager.completeAssetDic.ContainsKey(Target)) ApplyFix();
+                    if (resourceManager.completeAssetDic.ContainsKey(Target)) ApplyFix();
                 }
             }
             catch (Exception ex)
