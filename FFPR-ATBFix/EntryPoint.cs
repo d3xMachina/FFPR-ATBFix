@@ -8,7 +8,7 @@ using UnityEngine;
 
 namespace FFPR_ATBFix
 {
-    [BepInPlugin("silvris.ffpr.atb_fix", "ATB Fix", "2.0.0.0")]
+    [BepInPlugin("silvris.ffpr.atb_fix", "ATB Fix", "2.2.0.0")]
     [BepInProcess("FINAL FANTASY IV.exe")]
     [BepInProcess("FINAL FANTASY V.exe")]
     [BepInProcess("FINAL FANTASY VI.exe")]
